@@ -36,6 +36,18 @@ audacious/.config/audacious/plugin-registry
 audacious/.config/audacious/playlists/
 audacious/.config/audacious/playlist-state
 
+# Audacious
+audacious/.config/audacious/QtUi.conf
+audacious/.config/audacious/playlist-state
+audacious/.config/audacious/playlists/
+audacious/.config/audacious/plugin-registry
+audacious/.config/audacious/scrobbler.log
+
+# OBS
+obs/.config/obs-studio/logs/
+obs/.config/obs-studio/profiler_data/
+obs/.config/obs-studio/plugin_config/obs-websocket/
+
 # qBittorrent (if you add it later)
 **/qBittorrent/
 
