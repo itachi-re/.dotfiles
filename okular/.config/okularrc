@@ -1,0 +1,28 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Ayat Certificate.pdf
+File10[$e]=$HOME/Documents/work/class_notes/syl.1.2.pdf
+File2[$e]=$HOME/Downloads/Sorted_Chemistry_Questions.pdf
+File3[$e]=$HOME/Downloads/Class-note-JaTEC.pdf
+File4[$e]=$HOME/Downloads/Sorted_Exact_Handwritten_Chemistry.pdf
+File5[$e]=$HOME/Downloads/rotational_mechanics_notes.md.pdf
+File6[$e]=$HOME/Projects/github/clean-system-guide/linux-archiving-guide.md
+File7[$e]=$HOME/Documents/work/class_notes/syllabus.pdf
+File8[$e]=$HOME/.local/share/lutris/prefixes/goaty/drive_c/Goat Simulator/UE3_THIRD_PARTY_SOFTWARE.pdf
+File9[$e]=$HOME/Documents/work/class_notes/syl.1.1.pdf
+Name1[$e]=Ayat Certificate.pdf
+Name10[$e]=syl.1.2.pdf
+Name2[$e]=Sorted_Chemistry_Questions.pdf
+Name3[$e]=Class-note-JaTEC.pdf
+Name4[$e]=Sorted_Exact_Handwritten_Chemistry.pdf
+Name5[$e]=rotational_mechanics_notes.md.pdf
+Name6[$e]=linux-archiving-guide.md
+Name7[$e]=syllabus.pdf
+Name8[$e]=UE3_THIRD_PARTY_SOFTWARE.pdf
+Name9[$e]=syl.1.1.pdf

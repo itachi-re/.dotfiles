@@ -1,0 +1,198 @@
+# ╔══════════════════════════════════════════════════════════════════════╗
+# ║              Atuin — Enhanced Shell History Config                  ║
+# ║              Shell: zsh  |  Style: compact + fuzzy                  ║
+# ╚══════════════════════════════════════════════════════════════════════╝
+
+# ── Sync & Auto-Update ────────────────────────────────────────────────
+auto_sync        = true
+update_check     = true
+sync_address     = "https://api.atuin.sh"
+sync_frequency   = "5m"   # sync every 5 min; set "0" to sync after every command
+
+# ── Search ────────────────────────────────────────────────────────────
+# fuzzy is the most powerful — typo-tolerant, ranked, fast
+search_mode                    = "fuzzy"
+search_mode_shell_up_key_binding = "fuzzy"
+
+# ── Filter Modes ──────────────────────────────────────────────────────
+# Ctrl+R → global search across all hosts/sessions
+# ↑ arrow → only commands run in THIS directory (muscle-memory friendly)
+filter_mode                      = "global"
+filter_mode_shell_up_key_binding = "directory"
+
+# Workspace mode: limit to commands in the current git repo tree
+workspaces = true
+
+# ── UI / Style ────────────────────────────────────────────────────────
+style         = "compact"    # compact | full | auto
+inline_height = 20           # lines of history visible without going fullscreen
+invert        = true         # search bar at the top (feels more natural)
+
+# Show a preview of long commands that would be cut off
+show_preview      = true
+max_preview_height = 4
+
+# Show the help bar and tabs at the bottom
+show_help = true
+show_tabs = true
+
+# Auto-hide tabs row when terminal is very small (compact mode only)
+auto_hide_height = 6
+
+# Show numeric shortcuts (1–9) beside entries for quick selection
+show_numeric_shortcuts = true
+
+# Keep a few lines of context when paging up/down
+scroll_context_lines = 2
+
+# ── Keybinding Behaviour ──────────────────────────────────────────────
+# enter_accept = true  → Enter executes immediately; Tab puts it in the prompt for editing
+# This mirrors fzf's default and feels snappy
+enter_accept = true
+
+# Keymap auto-detects your zsh vi/emacs mode at startup
+keymap_mode = "auto"
+
+# Cursor shape per mode (requires a terminal that supports OSC 50/52)
+keymap_cursor = { emacs = "blink-bar", vim_insert = "blink-bar", vim_normal = "steady-block" }
+
+# ── Exit Behaviour ────────────────────────────────────────────────────
+# Escape restores whatever you had typed before opening Atuin
+exit_mode      = "return-original"
+word_jump_mode = "emacs"
+
+# ── History Format ────────────────────────────────────────────────────
+# Shown in `atuin history list` output (not the TUI columns — those are in [ui])
+history_format = "{time}\t{duration}\t{command}"
+
+# ── Dialect & Timezone ───────────────────────────────────────────────
+dialect  = "us"
+timezone = "local"
+
+# ── Secrets & Privacy ────────────────────────────────────────────────
+# Automatically strip known secret patterns (AWS keys, GitHub PATs, Slack tokens…)
+secrets_filter = true
+
+# Block commands matching these patterns from ever being saved
+history_filter = [
+  # bare navigation noise
+  "^ls$",
+  "^ls -la$",
+  "^ll$",
+  "^la$",
+  "^cd$",
+  "^cd \\.\\.?$",
+  "^pwd$",
+  "^clear$",
+  "^reset$",
+  "^exit$",
+  # secrets / sensitive
+  "^export .*(?:TOKEN|KEY|SECRET|PASSWORD|PASSWD|API_KEY)=",
+  "^[A-Z_]+=\\S+ ",         # inline env-var commands  e.g.  API_KEY=xyz curl …
+  "^curl.*-u .*:.*",        # curl with Basic auth
+  "^sshpass",
+  "^gpg.*--passphrase",
+]
+
+# Block commands run inside sensitive directories
+cwd_filter = [
+  "^/tmp/secret",
+  "^/var/secret",
+]
+
+# ── Network Timeouts ─────────────────────────────────────────────────
+network_connect_timeout = 5
+network_timeout         = 5
+local_timeout           = 5
+
+# ── Daemon (background sync) ──────────────────────────────────────────
+[daemon]
+enabled        = true
+autostart      = true
+sync_frequency = 300   # seconds between background syncs
+
+# ── Sync v2 (records-based, more reliable) ────────────────────────────
+[sync]
+records = true
+
+# ── Theme ─────────────────────────────────────────────────────────────
+[theme]
+name = "default"    # built-ins: default | autumn | marine
+                    # or drop a custom NAME.toml in ~/.config/atuin/themes/
+
+# ── Statistics ────────────────────────────────────────────────────────
+[stats]
+# Treat these tools' first argument as the "real" command for stats
+common_subcommands = [
+  "apt",
+  "cargo",
+  "composer",
+  "docker",
+  "dotnet",
+  "git",
+  "go",
+  "ip",
+  "kubectl",
+  "nix",
+  "npm",
+  "pnpm",
+  "podman",
+  "systemctl",
+  "tmux",
+  "yarn",
+  "pip",
+  "python",
+  "python3",
+]
+
+# Strip these prefixes before counting
+common_prefix = ["sudo", "nohup", "time"]
+
+# Completely ignore these from stats
+ignored_commands = [
+  "ls",
+  "ll",
+  "la",
+  "cd",
+  "pwd",
+  "clear",
+  "reset",
+  "exit",
+  "history",
+  "man",
+]
+
+# ── Keys ──────────────────────────────────────────────────────────────
+[keys]
+scroll_exits        = true    # ↑/↓ past the last entry closes the TUI
+exit_past_line_start = true   # ← at start of line closes TUI
+accept_past_line_end = true   # → at end of line copies entry to prompt
+accept_past_line_start = false
+accept_with_backspace  = false
+
+# ── Preview Strategy ─────────────────────────────────────────────────
+[preview]
+strategy = "auto"   # auto | static | fixed
+
+# ── TUI Column Layout ─────────────────────────────────────────────────
+[ui]
+# Shows: exit-code glyph | duration | relative time | cwd | command
+# The "command" column expands to fill all remaining space.
+columns = [
+  "exit",
+  { type = "duration",  width = 7  },
+  { type = "time",      width = 9  },
+  { type = "directory", width = 25 },
+  "command",
+]
+
+# ── Search Filter Priority ────────────────────────────────────────────
+[search]
+# Ctrl+R cycles through these in order; workspace is skipped outside git repos
+filters = ["global", "host", "session", "workspace", "directory"]
+
+# ── Tmux Popup (optional — requires tmux ≥ 3.2) ──────────────────────
+[tmux]
+enabled = false   # flip to true if you live inside tmux
+width   = "85%"
+height  = "65%"
