@@ -191,3 +191,5 @@ keybind = ctrl+shift+n=new_window
 keybind = ctrl+shift+f=toggle_fullscreen
 keybind = ctrl+shift+r=reload_config
 keybind = ctrl+shift+comma=open_config
+
+keybind = ctrl+shift+s=write_scrollback_file:open

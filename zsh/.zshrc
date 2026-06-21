@@ -363,3 +363,6 @@ alias pk='pkill'
 # ══════════════════════════════════════════════════════════════════
 PROMPT=''   # Clear before starship takes over
 eval "$(starship init zsh)"
+
+# OpenClaw Completion
+source "/home/itachi/.openclaw/completions/openclaw.zsh"
