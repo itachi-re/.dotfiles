@@ -1,102 +1,102 @@
 [Background]
-Color=14,14,20
+Color=20,12,16
 RandomHueRange=360
 RandomSaturationRange=100
 
 [BackgroundFaint]
-Color=76,74,98
+Color=98,70,80
 RandomHueRange=360
 RandomSaturationRange=100
 
 [BackgroundIntense]
-Color=23,22,27
+Color=27,21,23
 RandomHueRange=360
 RandomSaturationRange=100
 
 [Color0]
-Color=14,14,20
+Color=20,12,16
 
 [Color0Faint]
-Color=154,153,171
+Color=175,147,157
 
 [Color0Intense]
-Color=177,176,196
+Color=200,170,180
 
 [Color1]
-Color=238,152,146
+Color=165,161,170
 
 [Color1Faint]
-Color=161,103,101
+Color=114,108,115
 
 [Color1Intense]
-Color=241,165,160
+Color=177,173,181
 
 [Color2]
-Color=248,152,171
+Color=232,158,189
 
 [Color2Faint]
-Color=169,103,118
+Color=160,106,128
 
 [Color2Intense]
-Color=250,165,182
+Color=236,171,197
 
 [Color3]
-Color=176,176,222
+Color=252,166,142
 
 [Color3Faint]
-Color=119,119,153
+Color=173,111,97
 
 [Color3Intense]
-Color=186,186,227
+Color=253,178,157
 
 [Color4]
-Color=175,177,254
+Color=148,233,225
 
 [Color4Faint]
-Color=118,120,175
+Color=104,158,153
 
 [Color4Intense]
-Color=185,187,254
+Color=164,236,229
 
 [Color5]
-Color=218,184,222
+Color=202,230,192
 
 [Color5Faint]
-Color=148,124,153
+Color=140,156,131
 
 [Color5Intense]
-Color=223,193,226
+Color=209,233,201
 
 [Color6]
-Color=233,221,205
+Color=225,228,246
 
 [Color6Faint]
-Color=158,150,142
+Color=155,154,168
 
 [Color6Intense]
-Color=236,225,212
+Color=229,231,247
 
 [Color7]
-Color=247,236,191
+Color=209,235,250
 
 [Color7Faint]
-Color=167,160,132
+Color=145,159,171
 
 [Color7Intense]
-Color=248,238,200
+Color=215,237,251
 
 [Foreground]
-Color=220,218,243
+Color=248,211,223
 RandomHueRange=360
 RandomSaturationRange=100
 
 [ForegroundFaint]
-Color=196,194,217
+Color=221,188,199
 RandomHueRange=360
 RandomSaturationRange=100
 
 [ForegroundIntense]
-Color=226,224,249
+Color=254,217,229
 RandomHueRange=360
 RandomSaturationRange=100
 
@@ -109,5 +109,5 @@ FillStyle=Adapt
 Opacity=1.0
 Wallpaper=/home/itachi/Pictures/Wallpapers/evangelion.png
 WallpaperFlipType=NoFlip
-WallpaperOpacity=0.2
+WallpaperOpacity=0.55
 
