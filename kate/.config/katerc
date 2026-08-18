@@ -126,7 +126,7 @@ SetEditor=false
 
 [MainWindow]
 1920x1080 screen: Height=1052
-1920x1080 screen: Width=923
+1920x1080 screen: Width=943
 
 [filetree]
 editShade=183,220,246
@@ -140,7 +140,7 @@ sortRole=0
 viewShade=211,190,222
 
 [lspclient]
-AllowedServerCommandLines=
+AllowedServerCommandLines=/usr/bin/clangd -log=error --background-index --limit-results=500 --completion-style=bundled
 AutoHover=true
 AutoImport=true
 BlockedServerCommandLines=
