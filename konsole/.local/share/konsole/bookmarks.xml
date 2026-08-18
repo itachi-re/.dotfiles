@@ -9,4 +9,20 @@
    </metadata>
   </info>
  </bookmark>
+ <bookmark href="file:///data/itachi/Projects/github/yuki-iptv">
+  <title>yuki-iptv</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///data/itachi/Projects/github">
+  <title>github</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
 </xbel>
