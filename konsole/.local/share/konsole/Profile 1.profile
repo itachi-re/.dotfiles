@@ -22,3 +22,4 @@ HistorySize=15000
 AnimatingCursorEnabled=true
 BlinkingCursorEnabled=false
 LineNumbers=1
+
