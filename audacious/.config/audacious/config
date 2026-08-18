@@ -1,6 +1,7 @@
 
 [audacious]
 generic_title_format=${title}${?artist: - ${artist}}
+repeat=TRUE
 
 [audgui]
 filesel_path=/home/itachi/Music/
@@ -41,11 +42,11 @@ player_y=285
 item_count=0
 
 [pipewire]
-volume_left=100
-volume_right=100
+volume_left=80
+volume_right=80
 
 [qtui]
-column_widths=25,25,289,162,50,240,175,25,100,109,102,275,275,275,75,275,175,75,25,190
+column_widths=25,25,388,231,50,607,175,25,100,109,102,275,275,275,75,275,175,75,25,190
 player_height=877
 player_width=1308
 playlist_columns=playing title artist album length year
