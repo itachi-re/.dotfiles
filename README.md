@@ -9,7 +9,8 @@
 [![Distribution: openSUSE](https://img.shields.io/badge/Distribution-openSUSE-73BA25?logo=opensuse)](https://www.opensuse.org/)
 [![Prompt: Starship](https://img.shields.io/badge/Prompt-Starship-DD0B78)](https://starship.rs/)
 [![Manager: GNU Stow](https://img.shields.io/badge/Manager-GNU%20Stow-blue)](https://www.gnu.org/software/stow/)
-![Repo Size](https://img.shields.io/github/repo-size/itachi-re/.dotfiles)
+![Repo Size](https://img.shields.io/github/repo-size/itachi-re/.dotfiles/)
+
 *Sleek, performant, and endlessly customizable*
 
 [Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration-guide) • [Dependencies](#-dependencies)
