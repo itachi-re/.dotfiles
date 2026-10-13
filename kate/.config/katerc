@@ -18,6 +18,8 @@ Open New Tab To The Right Of Current=false
 Output History Limit=100
 Output With Date=false
 PinnedDocuments=
+Quickopen Filter Mode=0
+Quickopen List Mode=true
 Recent File List Entry Count=10
 Restore Window Configuration=true
 SDI Mode=false
@@ -99,6 +101,7 @@ Show Documentation With Completion=true
 Show File Encoding=true
 Show Folding Icons On Hover Only=true
 Show Line Count=true
+Show Line Ending Type in Statusbar=false
 Show Scrollbars=0
 Show Statusbar Dictionary=true
 Show Statusbar Highlighting Mode=true
@@ -126,7 +129,7 @@ SetEditor=false
 
 [MainWindow]
 1920x1080 screen: Height=1052
-1920x1080 screen: Width=943
+1920x1080 screen: Width=917
 
 [filetree]
 editShade=183,220,246
