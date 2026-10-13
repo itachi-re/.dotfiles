@@ -127,3 +127,11 @@ mpv/.config/mpv/cache/
 obs/.config/obs-studio/logs/
 obs/.config/obs-studio/crashes/
 obs/.config/obs-studio/plugin_manager/
+
+# generated / volatile
+gtk/.config/gtk-*/colors.css
+gtk/.config/gtk-3.0/assets/
+obs/.config/obs-studio/.sentinel/
+obs/.config/obs-studio/plugin_config/rtmp-services/
+konsole/.local/share/konsole/bookmarks.xml
+okular/.config/okularrc
