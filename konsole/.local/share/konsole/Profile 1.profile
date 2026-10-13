@@ -16,7 +16,7 @@ TrimLeadingSpacesInSelectedText=true
 UnderlineFilesEnabled=true
 
 [Scrolling]
-HistorySize=15000
+HistorySize=50000
 
 [Terminal Features]
 AnimatingCursorEnabled=true
