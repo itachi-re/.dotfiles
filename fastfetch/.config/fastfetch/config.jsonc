@@ -73,7 +73,7 @@
       "type": "disk",
       "key": "󰋊 Disk (/)",
       "keyColor": "#94e2d5",
-      "folders": "/"
+      "folders": "/:/data"
     },
 
     // ── Footer
